@@ -43,7 +43,85 @@
           <li class="list-group-item">Due Date</li>
           <li class="list-group-item">Hourly Rate</li>
         </ul>
-        <a href="#" class="btn btn-primary">Add Project</a>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#myModal"
+        >
+          Add Project
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Project Information</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Project form in the modal -->
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Project Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="project-name"
+                  placeholder="Type project Name Here"
+                />
+              </div>
+              <div class="form-group">
+                <label for="project-type">Project Type</label>
+                <select class="form-control" id="project-type">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="due-date">Due Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="due-date"
+                  placeholder="Put Project Due Date Here"
+                />
+              </div>
+              <div class="form-group">
+                <label for="hourly-rate">Hourly Rate</label>
+                <input
+                  type="text"
+                  class="hourly-rate"
+                  id="hourly-rate"
+                  placeholder="E.g. $10.00"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
       </div>
     </div>
 
